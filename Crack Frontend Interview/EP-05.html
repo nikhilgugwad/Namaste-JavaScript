@@ -1,0 +1,55 @@
+<!-- Async and Defer attributes -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Normal HTML Parsing Script</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Your HTML content here -->
+  </body>
+</html>
+
+<!-- 
+Normal HTML Parsing Script:
+- In this case, the <script> tag includes the JavaScript file (script.js) directly in the HTML document. The browser will pause parsing the HTML content, fetch and execute the script, and then continue parsing the rest of the HTML. This means that the rendering of the page is blocked until the script is completely loaded and executed.
+- Blocks HTML parsing until the script is fetched and executed.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Parsing Script using async</title>
+    <script async src="script.js"></script>
+  </head>
+  <body>
+    <!-- Your HTML content here -->
+  </body>
+</html>
+
+<!-- 
+HTML Parsing Script using async:
+- Adding the async attribute to the <script> tag tells the browser to continue parsing the HTML content while simultaneously fetching the script. Once the script is fetched, parsing will be paused, and the script will be executed. After that, parsing resumes. The async attribute is useful when the script doesn't rely on the HTML content being fully parsed.
+- Allows HTML parsing to continue while fetching the script. Executes the script when it's ready, potentially before the HTML parsing is complete.    
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Parsing Script using defer</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Your HTML content here -->
+  </body>
+</html>
+
+<!-- 
+HTML Parsing Script using defer:
+- Adding the defer attribute to the <script> tag also allows the HTML parsing to continue without interruption. The key difference from async is that the deferred script will only be executed after the HTML content has been fully parsed. This is useful when the script relies on the DOM structure and content being available.
+- Allows HTML parsing to continue while fetching the script. Executes the script after the HTML parsing is complete.
+ -->
