@@ -55,7 +55,3 @@ Welcome to "Namaste JavaScript" – your comprehensive resource for JavaScript l
 **Note:** This repository is actively tracking the [Namaste JavaScript Playlist](https://namastedev.com/learn/namaste-javascript) for updates. Any new uploads to the playlist will be added to this repository in their respective folders. Stay tuned for the latest content!
 
 Feel free to explore the folders and files to dive into specific JavaScript topics. Happy coding!
-
-**Clone this Repository:**
-```bash
-git clone https://github.com/nikhilgugwad/Namaste-JavaScript.git
